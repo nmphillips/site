@@ -1,0 +1,47 @@
+#site{
+    text-align: center;
+    margin: auto;
+    }
+    .name {
+        font: 56px georgia;
+        color: black;
+        }
+    .photo{
+        border-radius: 4px;
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        object-fit: cover;
+        }
+    .body-text{
+        font: 16px georgia;
+        color: black;
+        text-align: left;
+        margin-top: 0;
+        }
+    .column{
+        float: left;
+        width: 50%;
+    }
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* responsive screen */
+
+@media screen and (max-width: 964px) {
+    .column {
+      width: 100%;
+    }
+  
+    .body-text {
+      max-width: 70%;
+      margin: 0 auto 20px;
+    }
+  
+    .photo {
+      max-width: 70%;
+    }
+  }
