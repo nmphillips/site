@@ -1,6 +1,7 @@
 #site{
     text-align: center;
     margin: auto;
+    max-width: 1100px;
     }
     .name {
         font: 56px georgia;
@@ -9,7 +10,6 @@
     .photo{
         border-radius: 4px;
         max-width: 90%;
-        height: auto;
         margin-bottom: 20px;
         object-fit: cover;
         }
@@ -29,19 +29,18 @@
         clear: both;
     }
 
-/* responsive screen */
-
-@media screen and (max-width: 964px) {
-    .column {
-      width: 100%;
-    }
-  
-    .body-text {
-      max-width: 70%;
-      margin: 0 auto 20px;
-    }
-  
-    .photo {
-      max-width: 70%;
-    }
+@media screen and (max-width: 1100px) {
+  .column {
+    width: 80%;
+    max-width: 650px;
   }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photo{
+    width: 100%;
+    max-width: 420px;
+  }
+}    
